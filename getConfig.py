@@ -4,6 +4,7 @@ import configparser
 
 PROJECT_DIR = os.path.split(os.path.realpath(__file__))[0]
 CONFIG_PATH = os.path.join(PROJECT_DIR, 'config', 'config.ini')
+RESPORTS_DIR_PATH = os.path.join(PROJECT_DIR, "report")
 ENCODING = "UTF-8"
 
 

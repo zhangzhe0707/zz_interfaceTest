@@ -1,6 +1,6 @@
 import pymysql
 import getConfig as getConfig
-from base.log import Log
+from base import Log
 
 localsGetConfig = getConfig.GetConfig()
 

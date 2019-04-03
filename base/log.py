@@ -2,7 +2,6 @@ import os
 import logging
 from datetime import datetime
 import getConfig
-from base.baseCode import BaseCode
 
 LOCAL_READ_CONFIG = getConfig.GetConfig()
 ENCODING = 'UTF-8'
@@ -10,12 +9,11 @@ ENCODING = 'UTF-8'
 
 class Log:
     def __init__(self):
-        basecode = BaseCode()
-        project_dir = getConfig.PROJECT_DIR
-        log_dir_path = os.path.join(project_dir, "logs")
-        if not os.path.exists(log_dir_path):
-            os.mkdir(log_dir_path)
-        log_path = os.path.join(log_dir_path, str(datetime.now().strftime("%Y%m%d%H%M%S")))
+        # project_dir = getConfig.PROJECT_DIR
+        resports_dir_path = getConfig.RESPORTS_DIR_PATH
+        if not os.path.exists(resports_dir_path):
+            os.mkdir(resports_dir_path)
+        log_path = os.path.join(resports_dir_path, str(datetime.now().strftime("%Y%m%d%H%M%S")))
         if not os.path.exists(log_path):
             os.mkdir(log_path)
 

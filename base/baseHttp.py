@@ -44,6 +44,8 @@ class BaseHttp:
         headers = {'Content-Type': "application/x-www-form-urlencoded"}
         try:
             response = requests.get(url, headers=headers, params=params)
+            self.log.info("GET 请求成功，返回体内容：{0} ".format(response))
+            self.log.info("GET 请求成功，返回体data：{0} ".format(response.content))
             return response
         except TimeoutError:
             self.log.error("请求超时失败!")
@@ -58,6 +60,10 @@ class BaseHttp:
         try:
             response = requests.post(url, headers=headers, data=data,
                                      timeout=float(self.timeout))
+            self.log.info("POST 请求成功，返回体内容：{0} ".format(response))
+            self.log.info("POST 请求成功，返回体data：{0} ".format(response.content))
+
+
             return response
         except TimeoutError:
             self.log.error("请求超时失败!")
@@ -73,6 +79,10 @@ class BaseHttp:
         url = self.url + uri
         try:
             response = requests.post(url=url, headers=headers, json=data, timeout=float(self.timeout))
+            self.log.info("POST 请求发送Json成功，返回体：{0} ".format(response))
+            self.log.info("POST 请求发送Json成功，返回体data：{0} ".format(response.content))
+
+
             return response
         except TimeoutError:
             self.log.error("请求超时失败!")

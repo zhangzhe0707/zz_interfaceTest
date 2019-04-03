@@ -20,8 +20,9 @@
 """
 
 import xlrd
-from base.log import Log
+# from base.log import Log
 from xlutils3.copy import copy
+from base.log import Log
 
 
 class BaseExcel:
@@ -30,8 +31,8 @@ class BaseExcel:
     """
 
     def __init__(self, path):
-        log = Log()
         self.path = path
+        log = Log()
         self.logger = log.get_logger()
         try:
             self.workbook = xlrd.open_workbook(self.path, on_demand=True)
@@ -82,7 +83,10 @@ class BaseExcel:
         :return:s
         """
         sheet = self.get_sheet(sheet_name)
-        return sheet.cell_value(int(row), int(col))
+        cell_value = sheet.cell_value(int(row), int(col))
+        if type(cell_value) == float:
+            return int(cell_value)
+        return cell_value
 
     def release(self):
         """
@@ -112,9 +116,3 @@ class BaseExcel:
         sheet.write(row, col, cell_value)
         wb.save(self.path)
 
-
-if __name__ == '__main__':
-    be = BaseExcel("/Users/zhezhang/Code/PythonPractice/interfaceTest/testcase/testcase.xls")
-    be.get_sheet("TestData")
-    print(be.get_rows())
-    print(be.get_sheetindex("TestCase"))
