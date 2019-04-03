@@ -1,8 +1,8 @@
 import pymysql
-import getConfig as getConfig
+import operationConfig as getConfig
 from base import Log
 
-localsGetConfig = getConfig.GetConfig()
+localsGetConfig = getConfig.OperationConfig()
 
 
 class BaseDB:

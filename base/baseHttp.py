@@ -1,9 +1,9 @@
 import requests
 import json
-import getConfig as getConfig
+import operationConfig as getConfig
 from base.log import Log
 
-localGetConfig = getConfig.GetConfig()
+localGetConfig = getConfig.OperationConfig()
 
 
 class BaseHttp:
@@ -11,13 +11,13 @@ class BaseHttp:
     http请求封装类
     """
 
-    def __init__(self, ):
+    def __init__(self):
         log = Log()
         self.log = log.get_logger()
-        self.scheme = localGetConfig.get_http("scheme")
-        self.baseurl = localGetConfig.get_http("baseurl")
-        self.timeout = localGetConfig.get_http("timeout")
-        self.url = self.scheme + "://" + self.baseurl
+        self.scheme = localGetConfig.get_http('scheme')
+        self.baseurl = localGetConfig.get_http('baseurl')
+        self.timeout = localGetConfig.get_http('timeout')
+        self.url = self.scheme + '://' + self.baseurl
 
     def change_type(self, value):
         """
@@ -44,8 +44,8 @@ class BaseHttp:
         headers = {'Content-Type': "application/x-www-form-urlencoded"}
         try:
             response = requests.get(url, headers=headers, params=params)
-            self.log.info("GET 请求成功，返回体内容：{0} ".format(response))
-            self.log.info("GET 请求成功，返回体data：{0} ".format(response.content))
+            # self.log.info("GET 请求成功，返回体内容：{0} ".format(response))
+            # self.log.info("GET 请求成功，返回体data：{0} ".format(response.content))
             return response
         except TimeoutError:
             self.log.error("请求超时失败!")
@@ -62,8 +62,6 @@ class BaseHttp:
                                      timeout=float(self.timeout))
             self.log.info("POST 请求成功，返回体内容：{0} ".format(response))
             self.log.info("POST 请求成功，返回体data：{0} ".format(response.content))
-
-
             return response
         except TimeoutError:
             self.log.error("请求超时失败!")
@@ -79,19 +77,10 @@ class BaseHttp:
         url = self.url + uri
         try:
             response = requests.post(url=url, headers=headers, json=data, timeout=float(self.timeout))
-            self.log.info("POST 请求发送Json成功，返回体：{0} ".format(response))
-            self.log.info("POST 请求发送Json成功，返回体data：{0} ".format(response.content))
-
-
+            # self.log.info("POST 请求发送Json成功，返回体：{0} ".format(response))
+            # self.log.info("POST 请求发送Json成功，返回体data：{0} ".format(response.content))
             return response
         except TimeoutError:
             self.log.error("请求超时失败!")
             return None
 
-
-if __name__ == "__main__":
-    http = BaseHttp()
-    http.set_url("/")
-    r = http.get()
-    print(r.status_code)
-    print(r.content)

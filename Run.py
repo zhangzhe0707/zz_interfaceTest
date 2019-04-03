@@ -20,15 +20,19 @@
 '''
 
 import os
-import platform
-
-...
+from datetime import datetime
+import operationConfig
 
 if __name__ == '__main__':
-    sysstr = platform.system()
-    if (sysstr == "Windows"):
-        output = os.popen('pytest testcode --html={0}/report.html'.format("resport"))
-        print(output.read())
-    elif (sysstr == "Darwin" or sysstr == "Linux" ):
-        output = os.popen('pytest testcode --html={0}/report.html'.format("resport"))
-        print(output.read())
+    setConfig = operationConfig.OperationConfig()
+    resports_dir_path = operationConfig.RESPORTS_DIR_PATH
+    if not os.path.exists(resports_dir_path):
+        os.mkdir(resports_dir_path)
+    log_path = os.path.join(resports_dir_path, str(datetime.now().strftime("%Y%m%d%H%M%S")))
+    if not os.path.exists(log_path):
+        os.mkdir(log_path)
+
+    setConfig.set_report('path', log_path)
+
+    output = os.popen('pytest testCode --html={0}/report.html'.format(log_path))
+    print(output.read())

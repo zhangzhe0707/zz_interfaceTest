@@ -8,7 +8,7 @@ RESPORTS_DIR_PATH = os.path.join(PROJECT_DIR, 'reports')
 ENCODING = 'UTF-8'
 
 
-class GetConfig:
+class OperationConfig:
     def __init__(self):
         with open(CONFIG_PATH, encoding=ENCODING) as file_object:
             config_data = file_object.read()
@@ -60,6 +60,16 @@ class GetConfig:
         :return:
         """
         value = self.config_file.get('EXCEL', name)
+        return value
+
+    def get_report(self, name):
+        """
+        获取Excel字段对应列号
+        :param self:
+        :param name: Excel 字段列名
+        :return:
+        """
+        value = self.config_file.get('REPOST', name)
         return value
 
     def set_report(self, name, value):

@@ -1,21 +1,15 @@
 import os
 import logging
 from datetime import datetime
-import getConfig
+import operationConfig
 
-LOCAL_READ_CONFIG = getConfig.GetConfig()
+LOCAL_READ_CONFIG = operationConfig.OperationConfig()
 ENCODING = 'UTF-8'
 
 
 class Log:
     def __init__(self):
-        # project_dir = getConfig.PROJECT_DIR
-        resports_dir_path = getConfig.RESPORTS_DIR_PATH
-        if not os.path.exists(resports_dir_path):
-            os.mkdir(resports_dir_path)
-        log_path = os.path.join(resports_dir_path, str(datetime.now().strftime("%Y%m%d%H%M%S")))
-        if not os.path.exists(log_path):
-            os.mkdir(log_path)
+        log_path = LOCAL_READ_CONFIG.get_report('path')
 
         # 定义 logger 实例
         self.logger = logging.getLogger()
@@ -55,4 +49,3 @@ class Log:
         :return:
         """
         self.logger.info("---------CaseName:{0} END--------".format(case_no))
-
