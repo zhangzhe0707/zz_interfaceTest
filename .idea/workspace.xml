@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c8bcd2-192f-4491-a81c-b5a29416cb74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testcode/test_Run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/baseCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/baseCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/baseDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/baseDB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/baseExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/baseExcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/baseHttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/baseHttp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functionCode/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcode/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functionCode/funApi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/getConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/getConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/testcase.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/testcase.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcode/test_Run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="630">
               <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -52,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="105" column="12" lean-forward="true" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+            <state relative-caret-position="299">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
             </state>
           </provider>
         </entry>
@@ -346,7 +334,7 @@
       <workItem from="1554119662980" duration="862000" />
       <workItem from="1554125924206" duration="499000" />
       <workItem from="1554126460448" duration="116000" />
-      <workItem from="1554126606141" duration="17800000" />
+      <workItem from="1554126606141" duration="17875000" />
     </task>
     <servers>
       <GitHub url="https://github.com">
@@ -388,7 +376,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30753000" />
+    <option name="totallyTimeSpent" value="30828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
@@ -399,7 +387,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871288" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45544556" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45544556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,7 +396,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32913166" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49919224" weight="0.2930693" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49919224" visible="true" weight="0.2930693" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32970297" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -796,7 +784,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcode/test_Run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="630">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -806,8 +794,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="105" column="12" lean-forward="true" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+        <state relative-caret-position="299">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
