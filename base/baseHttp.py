@@ -17,7 +17,8 @@ class BaseHttp:
         self.scheme = localGetConfig.get_http('scheme')
         self.baseurl = localGetConfig.get_http('baseurl')
         self.timeout = localGetConfig.get_http('timeout')
-        self.url = self.scheme + '://' + self.baseurl
+        self.port = localGetConfig.get_http('port')
+        self.url = self.scheme + '://' + self.baseurl + ':' + self.port
 
     def change_type(self, value):
         """
@@ -77,10 +78,9 @@ class BaseHttp:
         url = self.url + uri
         try:
             response = requests.post(url=url, headers=headers, json=data, timeout=float(self.timeout))
-            # self.log.info("POST 请求发送Json成功，返回体：{0} ".format(response))
-            # self.log.info("POST 请求发送Json成功，返回体data：{0} ".format(response.content))
+            self.log.info("POST 请求发送Json成功，返回体：{0} ".format(response))
+            self.log.info("POST 请求发送Json成功，返回体data：{0} ".format(response.content))
             return response
         except TimeoutError:
             self.log.error("请求超时失败!")
             return None
-

@@ -34,5 +34,5 @@ if __name__ == '__main__':
 
     setConfig.set_report('path', log_path)
 
-    output = os.popen('pytest testCode --html={0}/report.html'.format(log_path))
+    output = os.popen('pytest testCode --html={0}/report.html --json={0}/report.json'.format(log_path))
     print(output.read())
