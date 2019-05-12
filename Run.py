@@ -3,7 +3,7 @@
 # -*- encoding: utf-8 -*-
 
 '''
-@Author: 
+@Author: zz
 
 @License: (C) Copyright 2013-2017, 
 
@@ -34,5 +34,5 @@ if __name__ == '__main__':
 
     setConfig.set_report('path', log_path)
 
-    output = os.popen('pytest testCode --html={0}/report.html --json={0}/report.json'.format(log_path))
+    output = os.popen('pytest RunCode --html={0}/report.html --json={0}/report.json'.format(log_path))
     print(output.read())

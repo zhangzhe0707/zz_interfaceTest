@@ -14,10 +14,10 @@ class OperationConfig:
             config_data = file_object.read()
 
             # 移除文件中的BOM BOM = b'\xef\xbb\xbf'
-            if config_data[:3] == codecs.BOM_UTF8:
-                config_data = config_data[3:]
-                with open(CONFIG_PATH, 'w', encoding=ENCODING) as file_object:
-                    file_object.write(config_data)
+            # if config_data[:3] == codecs.BOM_UTF8:
+            #     config_data = config_data[3:]
+            with open(CONFIG_PATH, 'w', encoding=ENCODING) as file_object:
+                file_object.write(config_data)
 
             self.config_file = configparser.ConfigParser()
             self.config_file.read(CONFIG_PATH, encoding=ENCODING)

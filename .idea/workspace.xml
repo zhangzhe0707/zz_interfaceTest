@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c8bcd2-192f-4491-a81c-b5a29416cb74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/zz_InterfaceTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/baseHttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/baseHttp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/test_Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/test_Run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operationConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/operationConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/RunCode/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/test_Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/RunCode/test_Run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testdata/testcase.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testdata/testcase.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,56 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCode/test_Run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/baseCode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-410">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/log.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#187#196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,10 +36,12 @@
       <find>RESPORTS_DIR_PATH</find>
       <find>读取</find>
       <find>CaseName</find>
+      <find>@Author:</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>'</replace>
+      <replace>@Author: zz</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/base</dir>
@@ -117,13 +70,11 @@
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/functionCode/funApi.py" />
         <option value="$PROJECT_DIR$/test_Run.py" />
-        <option value="$PROJECT_DIR$/base/baseExcel.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/testcode/test_Run.py" />
         <option value="$PROJECT_DIR$/testase/test_Run.py" />
         <option value="$PROJECT_DIR$/testcase/test_Run.py" />
         <option value="$PROJECT_DIR$/getConfig.py" />
-        <option value="$PROJECT_DIR$/operationConfig.py" />
         <option value="$PROJECT_DIR$/base/log.py" />
         <option value="$PROJECT_DIR$/base/baseCode.py" />
         <option value="$PROJECT_DIR$/testCode/conftest.py" />
@@ -131,12 +82,17 @@
         <option value="$PROJECT_DIR$/base/baseHttp.py" />
         <option value="$PROJECT_DIR$/testCode/test_Run.py" />
         <option value="$PROJECT_DIR$/Run.py" />
+        <option value="$PROJECT_DIR$/base/baseExcel.py" />
+        <option value="$PROJECT_DIR$/operationConfig.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="327" />
+    <option name="y" value="338" />
+    <option name="width" value="947" />
+    <option name="height" value="381" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -144,7 +100,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,10 +107,15 @@
               <item name="zz_InterfaceTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="zz_InterfaceTest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zz_InterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,8 +288,8 @@
       <item itemvalue="Python.conftest" />
       <item itemvalue="Python.conftest (1)" />
       <item itemvalue="Python.baseHttp" />
-      <item itemvalue="Python tests.pytestProject" />
       <item itemvalue="Python.test_Run" />
+      <item itemvalue="Python tests.pytestProject" />
     </list>
     <recent_temporary>
       <list>
@@ -360,7 +320,21 @@
       <workItem from="1554126460448" duration="116000" />
       <workItem from="1554126606141" duration="25835000" />
       <workItem from="1554346853998" duration="6902000" />
-      <workItem from="1554357979527" duration="6036000" />
+      <workItem from="1554357979527" duration="6884000" />
+      <workItem from="1554385466163" duration="617000" />
+      <workItem from="1554426889074" duration="1321000" />
+      <workItem from="1554436185137" duration="1962000" />
+      <workItem from="1554682224598" duration="248000" />
+      <workItem from="1554682523050" duration="530000" />
+      <workItem from="1554739529859" duration="48000" />
+      <workItem from="1554739630282" duration="1168000" />
+      <workItem from="1555085037128" duration="121000" />
+      <workItem from="1555168468085" duration="1210000" />
+      <workItem from="1555719770611" duration="254000" />
+      <workItem from="1555720812498" duration="134000" />
+      <workItem from="1555746086519" duration="594000" />
+      <workItem from="1555902264853" duration="460000" />
+      <workItem from="1556889610348" duration="894000" />
     </task>
     <task id="LOCAL-00001" summary="添加请求类型过滤功能">
       <created>1554307975101</created>
@@ -410,17 +384,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51726000" />
+    <option name="totallyTimeSpent" value="62135000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="327" y="338" width="947" height="381" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26655897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23867403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32739726" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.27534246" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.27260274" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,7 +403,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5016155" side_tool="true" weight="0.40273973" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4983845" visible="true" weight="0.40273973" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4983845" visible="true" weight="0.43491125" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -468,23 +442,12 @@
     <MESSAGE value="添加请求类型过滤功能" />
     <option name="LAST_COMMIT_MESSAGE" value="添加请求类型过滤功能" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/base/baseCode.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/zz_InterfaceTest$test_Run.coverage" NAME="test_Run Coverage Results" MODIFIED="1554372141659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCode" />
     <SUITE FILE_PATH="coverage/zz_InterfaceTest$baseCode.coverage" NAME="baseCode Coverage Results" MODIFIED="1554225171685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/zz_InterfaceTest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1554127150239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zz_InterfaceTest$baseExcel.coverage" NAME="baseExcel Coverage Results" MODIFIED="1554213711307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/zz_InterfaceTest$Run.coverage" NAME="Run Coverage Results" MODIFIED="1554376853432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zz_InterfaceTest$Run.coverage" NAME="Run Coverage Results" MODIFIED="1555170611857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zz_InterfaceTest$Log.coverage" NAME="Log Coverage Results" MODIFIED="1554194465072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/zz_InterfaceTest$conftest__1_.coverage" NAME="conftest (1) Coverage Results" MODIFIED="1554351840457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCode" />
     <SUITE FILE_PATH="coverage/zz_InterfaceTest$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1554305785232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
@@ -533,8 +496,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testFile/emailStyle.txt" />
-    <entry file="file://$PROJECT_DIR$/testFile/img/test.txt" />
     <entry file="file://$PROJECT_DIR$/config/emailTemplate.html" />
     <entry file="file://$PROJECT_DIR$/result/20190401223434/output.log" />
     <entry file="file://$PROJECT_DIR$/result/20190401223846/output.log" />
@@ -570,39 +531,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/report/20190403084909/output.log" />
     <entry file="file://$PROJECT_DIR$/report/report.html" />
-    <entry file="file://$PROJECT_DIR$/operationConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reports/20190403235946/output.log" />
     <entry file="file://$PROJECT_DIR$/reports/20190403235946/report.html" />
-    <entry file="file://$PROJECT_DIR$/base/baseExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
-          <folding>
-            <element signature="e#203#214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reports/20190404000206/output.log" />
-    <entry file="file://$PROJECT_DIR$/base/baseDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reports/20190404000727/output.log" />
     <entry file="file://$PROJECT_DIR$/reports/20190404000935/output.log" />
     <entry file="file:///usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/encodings/ascii.py">
@@ -619,7 +550,7 @@
     <entry file="file://$PROJECT_DIR$/reports/20190404115030/report.html" />
     <entry file="file://$PROJECT_DIR$/reports/20190404115457/output.log" />
     <entry file="file://$PROJECT_DIR$/reports/20190404121838/output.log" />
-    <entry file="file://$PROJECT_DIR$/testCode/conftest.py">
+    <entry file="file://$PROJECT_DIR$/RunCode/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="20" selection-start-line="20" selection-end-line="24" />
@@ -633,16 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -650,19 +571,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/baseCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reports/20190404185711/output.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/20190404185711/output.log" />
     <entry file="file://$USER_HOME$/.virtualenvs/ENV3_interfaceTest/lib/python3.6/site-packages/requests/adapters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -670,46 +579,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/reports/20190404191323/report.json" />
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/baseDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/baseExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="e#203#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/20190408081626/report.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/base/baseHttp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+        <state relative-caret-position="641">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.ini">
+    <entry file="file://$PROJECT_DIR$/RunCode/test_Run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" selection-start-line="3" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCode/test_Run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        <state relative-caret-position="-152">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="47" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reports/20190404191323/report.json">
+    <entry file="file://$PROJECT_DIR$/base/baseCode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-end-column="4453" />
+        <state relative-caret-position="1039">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operationConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="410">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
-            <element signature="e#187#196#0" expanded="true" />
+            <element signature="e#189#198#0" expanded="true" />
           </folding>
         </state>
       </provider>
