@@ -18,7 +18,6 @@ class OperationConfig:
                 config_data = config_data[3:]
                 with open(CONFIG_PATH, 'w', encoding=ENCODING) as file_object:
                     file_object.write(config_data)
-
             self.config_file = configparser.ConfigParser()
             self.config_file.read(CONFIG_PATH, encoding=ENCODING)
 
@@ -52,6 +51,16 @@ class OperationConfig:
         value = self.config_file.get('DATABASE', name)
         return value
 
+    def get_mail(self, name):
+        """
+        获取邮件配置
+        :param self:
+        :param name: 邮件配置关键字名称
+        :return:
+        """
+        value = self.config_file.get('MAIL', name)
+        return value
+
     def get_excel(self, name):
         """
         获取Excel字段对应列号
@@ -69,11 +78,24 @@ class OperationConfig:
         :param name: Excel 字段列名
         :return:
         """
-        value = self.config_file.get('REPOST', name)
+        value = self.config_file.get('REPORT', name)
         return value
 
     def set_report(self, name, value):
         # 修改REPOST 配置里面的值
-        self.config_file.set("REPOST", name, value)  # 写入中文
+        self.config_file.set("REPORT", name, value)  # 写入中文
 
-        self.config_file.write(open(CONFIG_PATH, "r+", encoding="utf-8"))  #
+        self.config_file.write(open(CONFIG_PATH, "r+", encoding=ENCODING))  #
+
+
+if __name__ == "__main__":
+    from datetime import datetime
+
+    print(PROJECT_DIR)
+    print(CONFIG_PATH)
+    print(RESPORTS_DIR_PATH)
+    OC = OperationConfig()
+    print(OC.get_http('baseurl'))
+    log_path = os.path.join(RESPORTS_DIR_PATH, str(datetime.now().strftime("%Y%m%d%H%M%S")))
+    print(log_path)
+    OC.set_report('path', "jjjj")

@@ -21,7 +21,9 @@
 
 import os
 from datetime import datetime
+from time import sleep
 import operationConfig
+from base.baseEmail import reporst_mail
 
 if __name__ == '__main__':
     setConfig = operationConfig.OperationConfig()
@@ -34,5 +36,7 @@ if __name__ == '__main__':
 
     setConfig.set_report('path', log_path)
 
-    output = os.popen('pytest testCode --html={0}/report.html --json={0}/report.json'.format(log_path))
+    output = os.popen('pytest RunCode --html={0}/report.html --json={0}/report.json'.format(log_path))
+    sleep(10)
+    reporst_mail(os.path.join(log_path, 'report.html'))
     print(output.read())

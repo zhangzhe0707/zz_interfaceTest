@@ -1,6 +1,5 @@
 import os
 import logging
-from datetime import datetime
 import operationConfig
 
 LOCAL_READ_CONFIG = operationConfig.OperationConfig()
@@ -18,7 +17,8 @@ class Log:
         self.logger.setLevel(logging.INFO)
 
         # 定义日志路径默认
-        defaulthandler = logging.FileHandler(os.path.join(log_path, "output.log"), encoding=ENCODING)
+        defaulthandler = logging.FileHandler(os.path.join(log_path, "output.log"),
+                                             encoding=ENCODING)
 
         # 定义默认日志的输出格式
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -49,3 +49,10 @@ class Log:
         :return:
         """
         self.logger.info("---------CaseName:{0} END--------".format(case_no))
+
+
+if __name__ =="__main__":
+    lg = Log()
+    log_object = lg.get_logger()
+    log_object.error("错误信息")
+    log_object.info("info 日志信息")
